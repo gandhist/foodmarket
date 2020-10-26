@@ -29,5 +29,12 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'midtrans' => [
+        'serverKey' => env('MID_SERVER_KEY'),
+        'clientKey' => env('MID_CLIENT_KEY'),
+        'isProduction' => env('MID_IS_PROD', false),
+        'isSanitized' => env('MID_IS_SANI', true),
+        'is3ds' => env('MID_IS_3DS', true)
+    ]
 
 ];
